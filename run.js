@@ -1,2 +1,2 @@
-//run.js
-javascript:(function(){ console.log('via git'); })();
+///run.js
+console.log('via git');
