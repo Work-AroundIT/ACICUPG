@@ -1,5 +1,6 @@
 /// test.js
 (function() {
+console.log('finger');
   if(window.location.toString().includes('Finger')){let admit_Date = new Date(document.getElementById("ctl00_main_lblAdmitDate").textContent);
     let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
     let newest_date = new Date(0, 0, 0);
