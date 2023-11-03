@@ -1,2 +1,5 @@
 /// test.js
-(function() {if(window.location.toString().includes('Finger')){let admit_Date = new Date(document.getElementById("ctl00_main_lblAdmitDate").textContent);let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");let newest_date = new Date(0, 0, 0);for (let i = 1; i < fingerprint_entries.length; i++){let entry_date = new Date(fingerprint_entries[i].getElementsByTagName("td")[0].textContent.trim());if(entry_date > newest_date){newest_date = new Date(entry_date);}}if(newest_date >=admit_Date){console.log('good');}else{console.log('bad');}}})();
+/// test.js
+(function() {
+  console.log("Hello I'm running via scriptlet injection.");
+})();
