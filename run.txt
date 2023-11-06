@@ -1,5 +1,9 @@
 /// test.js
 (function() {
   console.log("Hello I'm running via scriptlet injection.2");
-if(window.location.toString().includes('Finger')){console.log('hey')}
+if(window.location.toString().includes('Finger')){
+console.log('Finger');
+let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
+let newest_date = new Date(0, 0, 0);
+}
 })();
