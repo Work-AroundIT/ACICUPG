@@ -1,8 +1,9 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 6");
+  console.log("Ublock inject 7");
 if(window.location.toString().includes('Finger')){
-  console.log("Finger5");
+window.addEventListener('DOMContentLoaded', function() {
+    console.log("Finger6");
   console.log(document.getElementById("ctl00_main_gvFingerprints"));
   var fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
   console.log(fingerprint_entries);
@@ -21,5 +22,7 @@ if(window.location.toString().includes('Finger')){
     }else{
         console.log('bad');
     }
+});
+  
 }
 })();
