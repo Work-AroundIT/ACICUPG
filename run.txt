@@ -1,22 +1,18 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 8");
+  console.log("Ublock inject 9");
 if(window.location.toString().includes('Finger')){
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("Finger6");
-  console.log(document.getElementById("ctl00_main_gvFingerprints"));
+    console.log("Finger8");
+  var admit_Date = new Date(d.getElementById("ctl00_main_lblAdmitDate").textContent);
   var fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
-  console.log(fingerprint_entries);
   var newest_date = new Date(0, 0, 0);
-  console.log(newest_date);
   for (var i = 1; i < fingerprint_entries.length; i++){
-    console.log(i);
     var entry_date = new Date(fingerprint_entries[i].getElementsByTagName("td")[0].textContent.trim());
     if(entry_date > newest_date){
       newest_date = new Date(entry_date);
     }
   }
-  console.log(newest_date >=admit_Date);
     if(newest_date >=admit_Date){
         console.log('good');
     }else{
