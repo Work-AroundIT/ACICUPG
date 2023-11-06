@@ -20,6 +20,8 @@ if(window.location.toString().includes('Finger')){
       }
   });  
 }else if(window.location.toString().includes('RMS_Conditions_List')){
-console.log("Condition2");
+window.addEventListener('DOMContentLoaded', function() {
+    console.log("Condition3");    
+  }); 
 }
 })();
