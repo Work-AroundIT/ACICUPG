@@ -1,23 +1,23 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 10");
+  console.log("Ublock inject 11");
 if(window.location.toString().includes('Finger')){
-window.addEventListener('DOMContentLoaded', function() {
-  console.log("Finger9");
-  var admit_Date = new Date(document.getElementById("ctl00_main_lblAdmitDate").textContent);
-  var fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
-  var newest_date = new Date(0, 0, 0);
-  for (var i = 1; i < fingerprint_entries.length; i++){
-    var entry_date = new Date(fingerprint_entries[i].getElementsByTagName("td")[0].textContent.trim());
-    if(entry_date > newest_date){
-      newest_date = new Date(entry_date);
+  window.addEventListener('DOMContentLoaded', function() {
+    console.log("Finger10");
+    var admit_Date = new Date(document.getElementById("ctl00_main_lblAdmitDate").textContent);
+    var fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
+    var newest_date = new Date(0, 0, 0);
+    for (var i = 1; i < fingerprint_entries.length; i++){
+      var entry_date = new Date(fingerprint_entries[i].getElementsByTagName("td")[0].textContent.trim());
+      if(entry_date > newest_date){
+        newest_date = new Date(entry_date);
+      }
     }
-  }
-    if(newest_date >=admit_Date){
-        document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "LimeGreen";
-    }else{
-        document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "OrangeRed";
-    }
-});  
+      if(newest_date >=admit_Date){
+          document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "LimeGreen";
+      }else{
+          document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "OrangeRed";
+      }
+  });  
 }
 })();
