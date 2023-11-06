@@ -14,9 +14,9 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   }
     if(newest_date >=admit_Date){
-        console.log('good');
+        document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "LimeGreen";
     }else{
-        console.log('bad');
+        document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "OrangeRed";
     }
 });  
 }
