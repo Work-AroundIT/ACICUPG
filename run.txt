@@ -19,5 +19,7 @@ if(window.location.toString().includes('Finger')){
           document.getElementById("ctl00_main_lblAdmitDate").parentElement.parentElement.style.backgroundColor = "OrangeRed";
       }
   });  
+}else if(window.location.toString().includes('RMS_Conditions_List')){
+console.log("Condition2");
 }
 })();
