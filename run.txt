@@ -2,8 +2,19 @@
 (function() {
   console.log("Ublock inject 2");
 if(window.location.toString().includes('Finger')){
-console.log('Finger');
-let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
-let newest_date = new Date(0, 0, 0);
+  console.log('Finger');
+  let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
+  let newest_date = new Date(0, 0, 0);
+  for (let i = 1; i < fingerprint_entries.length; i++){    
+          let entry_date = new Date(fingerprint_entries[i].getElementsByTagName("td")[0].textContent.trim());
+          if(entry_date > newest_date){
+              newest_date = new Date(entry_date);
+          }
+      }
+      if(newest_date >=admit_Date){
+          console.log('good');
+      }else{
+          console.log('bad');
+      }
 }
 })();
