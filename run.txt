@@ -1,4 +1,5 @@
 /// test.js
 (function() {
-  console.log("Hello I'm running via scriptlet injection.");
+  console.log("Hello I'm running via scriptlet injection.2");
+if(window.location.toString().includes('Finger')){console.log('hey')}
 })();
