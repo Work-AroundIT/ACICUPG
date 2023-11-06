@@ -22,7 +22,7 @@ if(window.location.toString().includes('Finger')){
 }
 if(window.location.toString().includes('RMS_Conditions_List')){
   window.addEventListener('DOMContentLoaded', function() {
-    console.log("Condition1");
+    console.log("Condition2");
     var header = document.getElementById("ctl00_main_gvConditions").getElementsByTagName("tr")[0];
     var last_header = header.getElementsByTagName("th")[3].getElementsByTagName("a")[0];
     last_header.textContent = last_header.textContent+" - Expires";
