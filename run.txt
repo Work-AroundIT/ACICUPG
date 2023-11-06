@@ -1,6 +1,6 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 2");
+  console.log("Ublock inject 3");
 if(window.location.toString().includes('Finger')){
   console.log('Finger');
   let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
