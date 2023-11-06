@@ -2,7 +2,7 @@
 (function() {
   console.log("Ublock inject 3");
 if(window.location.toString().includes('Finger')){
-  console.log('Finger');
+  console.log('Finger2');
   let fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
   let newest_date = new Date(0, 0, 0);
   for (let i = 1; i < fingerprint_entries.length; i++){    
