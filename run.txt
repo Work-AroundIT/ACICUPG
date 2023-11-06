@@ -1,6 +1,6 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 7");
+  console.log("Ublock inject 8");
 if(window.location.toString().includes('Finger')){
 window.addEventListener('DOMContentLoaded', function() {
     console.log("Finger6");
@@ -22,7 +22,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }else{
         console.log('bad');
     }
-});
-  
+});  
 }
 })();
