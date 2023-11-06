@@ -1,6 +1,18 @@
 /// test.js
 (function() {
   console.log("Ublock inject 3");
+if(window.location.toString().includes('aims2.us')){
+  window.addEventListener('DOMContentLoaded', function() {
+  console.log("aims1");
+  if(document.getElementById("ctl00_ucBanner_hlADC") && document.getElementById("ctl00_quickSearchToAppArea_txtAdcNumber")){
+    document.getElementById("ctl00_quickSearchToAppArea_txtAdcNumber").value = document.getElementById("ctl00_ucBanner_hlADC").textContent;
+    document.getElementById("ctl00_quickSearchToAppArea_txtAdcNumber").addEventListener("click", function ll(){ 
+      this.value = ""; 
+      this.removeEventListener('click', ll);
+    });
+  }    
+  });
+}
 if(window.location.toString().includes('Finger')){
   window.addEventListener('DOMContentLoaded', function() {
     console.log("Finger10");
