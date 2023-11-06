@@ -1,6 +1,6 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 1");
+  console.log("Ublock inject 2");
 if(window.location.toString().includes('Finger')){
   window.addEventListener('DOMContentLoaded', function() {
     console.log("Finger10");
