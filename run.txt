@@ -1,10 +1,10 @@
 /// test.js
 (function() {
-  console.log("Ublock inject 9");
+  console.log("Ublock inject 10");
 if(window.location.toString().includes('Finger')){
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("Finger8");
-  var admit_Date = new Date(d.getElementById("ctl00_main_lblAdmitDate").textContent);
+  console.log("Finger9");
+  var admit_Date = new Date(document.getElementById("ctl00_main_lblAdmitDate").textContent);
   var fingerprint_entries = document.getElementById("ctl00_main_gvFingerprints").getElementsByTagName("tr");
   var newest_date = new Date(0, 0, 0);
   for (var i = 1; i < fingerprint_entries.length; i++){
