@@ -48,18 +48,9 @@ window.addEventListener('DOMContentLoaded', function() {
 }); 
 }else if(window.location.toString().includes('CaseNoteDetail')){
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("Condition6");
-    var header = document.getElementById("ctl00_main_gvConditions").getElementsByTagName("tr")[0];
-    var last_header = header.getElementsByTagName("th")[3].getElementsByTagName("a")[0];
-    last_header.textContent = last_header.textContent+" - Expires";
-    var condtions_rows = document.getElementById("ctl00_main_gvConditions").getElementsByTagName("tr");
-    for (var i = 1; i < condtions_rows.length; i++){
-  	  var last_update_el = condtions_rows[i].getElementsByTagName("td")[3];     
-      var last_updated_date = new Date(last_update_el.textContent.trim());
-  	  var expire_date = new Date(last_updated_date);
-  	  expire_date.setDate(expire_date.getDate() + 180);	
-  	  last_update_el.textContent = last_update_el.textContent + ' - ' +expire_date.toLocaleDateString('en-US');        
-    }
+    console.log("Note1");
+    
+    
 }); 
 }
 })();
