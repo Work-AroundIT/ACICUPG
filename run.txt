@@ -48,7 +48,11 @@ window.addEventListener('DOMContentLoaded', function() {
 }); 
 }else if(window.location.toString().includes('CaseNoteDetail')){
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("Note1"); 
+    console.log("Note2");
+var test = {"Notes":[{"Lable":"ACIC Clear","Note":"ACIC Ran Clear","Drop":"Insta records"},{"Lable":"DL","Note":"DL placed in release packet","Drop":"Drivers Licence"}],"Fav":["a","b"]};
+localStorage.setItem("ACICUPG", JSON.stringify(test));
+var test2 = JSON.parse(localStorage.getItem("ACICUPG"));
+console.log(test2);
 }); 
 }
 })();
