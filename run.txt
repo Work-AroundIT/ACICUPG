@@ -48,9 +48,7 @@ window.addEventListener('DOMContentLoaded', function() {
 }); 
 }else if(window.location.toString().includes('CaseNoteDetail')){
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("Note1");
-    
-    
+    console.log("Note1"); 
 }); 
 }
 })();
